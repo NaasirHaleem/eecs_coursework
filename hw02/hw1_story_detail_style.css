@@ -1,0 +1,42 @@
+body{
+  background-color: #A5D7A2;
+}
+
+a{font-family:cursive;}
+
+nav {box-sizing: content-box;
+    width: 200px;
+    height:200px;
+    padding:30px;
+    border: solid 1px;
+    border-color: #000000;
+    display: inline-block;}
+
+h1{ font-family:cursive; color: #240B74;
+          font-size: 40px;}
+h2 {
+  font-family:cursive; color: #5B3F00;
+  font-size: 40px;
+  margin-left:300px;
+
+}
+
+section {
+  box-sizing:content-box;
+  width: 1000px;
+  height:200px;
+  padding:0px;
+  display:block;
+  font-family:cursive;
+}
+
+img {
+  box-sizing:content-box;
+  width: 400px;
+  height:400px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+  display: inline-block;
+
+}

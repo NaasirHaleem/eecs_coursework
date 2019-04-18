@@ -1,0 +1,102 @@
+body{
+  background-color: #A5D7A2;
+}
+
+a{font-family:cursive;}
+
+nav {box-sizing: content-box;
+    width: 200px;
+    height:100px;
+    padding:30px;
+    border: solid 1px;
+    border-color: #000000;
+    display: inline-block;}
+
+h1{ font-family:cursive; color: #240B74;
+          font-size: 40px;}
+h2 {font-family:cursive; color: #240B74;
+
+}
+
+h3{
+  color: #5B3F00;
+  font-size: 40px;
+  margin-left: 600px;
+}
+
+div,p{font-family: cursive;}
+
+td {box-sizing: content-box;
+    width: 300px;
+    height:500px;
+    padding:30px;
+    border: solid 1px;
+    border-color: #000000;
+    display: inline-block}
+
+div td{
+  margin-left: 3rem;
+   margin-right: 2rem;
+}
+
+
+
+#uglyduckling{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+
+}
+
+#littlered{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+
+}
+
+#jackbean{
+width:200px;
+width: 200px;
+height:300px;
+padding:0px;
+border: solid 1px;
+border-color: #000000;
+
+}
+
+#tortoise{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+
+}
+
+#goldilocks{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+}
+
+
+#headless{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+
+}

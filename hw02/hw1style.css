@@ -1,0 +1,129 @@
+
+body{
+  background-color: #A5D7A2;
+}
+a{font-family:cursive;}
+
+nav {box-sizing: content-box;
+    width: 200px;
+    height:300px;
+    padding:30px;
+    border: solid 1px;
+    border-color: #000000;
+    display: inline-block;}
+
+.container {
+  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+margin-left: 2rem;
+margin-right: 2rem;
+grid-template-areas:
+   "tr" "tr"
+}
+
+td{
+   width: 33%;
+   box-sizing: border-box;
+   padding: 50px;
+   border: solid 1px
+}
+
+
+#childrenstory{
+    width: 200px;
+    height:300px;
+    padding:0px;
+    border: solid 1px;
+    border-color: #000000;
+}
+
+#studentstory{
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;}
+
+#students{
+
+}
+
+
+#greatstory{
+  width:200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;}
+
+#cats{
+
+}
+
+
+
+#greatnovel{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+}
+
+#greatauthors{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+}
+
+#authors{
+
+}
+
+
+
+#greatpoetry {
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+}
+
+#poetry {
+}
+
+#teacherresources{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+}
+
+#shortstoryoftheday{
+  width:200px;
+  width: 200px;
+  height:300px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+}
+
+
+
+h1,h2{ font-family:cursive; color: #240B74;
+
+}
+
+div,p{font-family: cursive;}
+
+table th{color: #5B3F00;
+font-size: 30px;}
