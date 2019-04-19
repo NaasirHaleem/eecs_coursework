@@ -1,0 +1,172 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+/* USE THIS SECTION FOR DESKTOPS */
+
+/*
+
+container {
+   display: grid;
+   grid-template-columns: .25fr .25fr 0.25fr .25fr;
+   grid-template-rows: auto;
+   grid-template-areas:
+      "menu1 header menu2 aside"
+      "card1 card2 card3 aside"
+      "main main main main";
+
+article section, main section, section div {
+  border:solid 1px;
+  padding:10px;
+  height: 300px;
+}
+
+aside section {
+  border:solid 1px;
+  padding:10px;
+  height: 625px;
+}
+
+.menu1{
+  grid-area: menu1;
+}
+
+.menu2{
+  grid-area: menu2;
+}
+
+.card1{
+  grid-area: card1;
+}
+
+.card2{
+  grid-area: card2;
+}
+
+.card3{
+  grid-area: card3;
+}
+
+.aside{
+  grid-area: aside;
+}
+
+.main{
+  grid-area: main;
+}
+/* THIS IS FOR TABLETYS
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*
+.container {
+   display: grid;
+   grid-template-columns:500px 0px 500px;
+   grid-template-rows:50px 100px 300px 300px;
+
+}
+
+
+section div{
+  border:solid 1px;
+  padding:0px;
+  height:50px;
+}
+
+article section, main section {
+  border:solid 1px;
+  padding:0px;
+  height:300px;
+}
+
+aside section {
+  border:solid 1px;
+  padding:0px;
+  height:100px;
+}
+
+.menu1 {
+  grid-column-start:1;
+  grid-column-end:2;
+}
+
+.menu2{
+  grid-column-start:3;
+  grid-column-end:4;
+}
+
+.aside{
+  grid-row-start:2;
+  grid-row-end:3;
+  grid-column-start:1;
+  grid-column-end:4;
+}
+
+.card1{
+  grid-row-start:3;
+  grid-row-end:4;
+}
+
+.card2{
+  grid-row-start:3;
+  grid-row-end:4;
+  grid-column-start:3;
+  grid-column-end:4;
+}
+
+.card3{
+  display:none;
+}
+
+.main{
+  grid-row-start:4;
+  grid-row-end:5;
+  grid-column-start:1;
+  grid-column-end:4;
+}
+*/
+
+
+/* THIS IS FOR PHONES
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+
+}
+*/
+.container {
+   display: grid;
+   grid-template-columns:480px;
+   grid-template-rows:50px 100px 300px 300px;}
+
+   .menu1 {
+     grid-row-start:1;
+     grid-row-end:2;
+   }
+
+   .menu2{
+     grid-row-start:2;
+     grid-row-end:3;
+   }
+
+   section div{
+     border:solid 1px;
+     padding:0px;
+     height:50px;
+   }
+
+   article section, main section {
+     border:solid 1px;
+     padding:0px;
+     height:300px;
+   }
+
+   aside section {
+     border:solid 1px;
+     padding:0px;
+     height:100px;
+   }
+.main{display:none;}
+.aside{display:none;}
