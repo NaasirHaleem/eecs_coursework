@@ -1,0 +1,269 @@
+body{
+  background-color: #A5D7A2;
+  font-family:cursive;
+}
+
+section{
+  width:500px;
+  padding:0px;
+  border:solid 1px;
+  border-color: black;
+
+}
+
+img{
+  width: 400px;
+  height:400px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+}
+
+h1{ font-family:cursive; color: #240B74;
+          font-size: 40px;}
+h2 {font-family:cursive; color: #240B74;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .2fr .1fr .1fr .2fr .2fr 1fr .2fr .2fr .2fr .2fr .2fr;
+  grid-template-areas:
+  "header header"
+  "card1 card1"
+  "card3 card4"
+  "card5 card6"
+  "card7 card8"
+  "card9 card10"
+  "card11 card12"
+  "card13 card14"
+  "card15 card16"
+  "card17 card17";
+
+
+border:solid 0px black;
+}
+
+
+
+
+.header {
+  grid-area:header;}
+
+
+.nav {
+  grid-area:nav;
+}
+
+.card2 {
+    grid-area:card2;
+    /* display:inline-grid; */
+  }
+
+.card3 {
+    grid-area:card3;
+    /* display:inline-grid; */
+  }
+.card4 {
+    grid-area:card4;
+    /* display:inline-grid; */
+  }
+.card5 {
+    grid-area:card5;
+    /* display:inline-grid; */
+  }
+
+.card6 {
+    grid-area:card6;
+    /* display:inline-grid; */
+  }
+
+.card7 {
+      grid-area:card7;
+      /* display:inline-grid; */
+    }
+.card8 {
+        grid-area:card8;
+        /* display:inline-grid; */
+      }
+.card9 {
+          grid-area:card9;
+          /* display:inline-grid; */
+        }
+.card10 {
+            grid-area:card10;
+            /* display:inline-grid; */
+          }
+.card11 {
+              grid-area:card11;
+              /* display:inline-grid; */
+            }
+.card12 {
+                grid-area:card12;
+                /* display:inline-grid; */
+              }
+.card13{
+        grid-area:card13;
+          /* display:inline-grid; */
+        }
+.card14{
+            grid-area:card14;
+            /* display:inline-grid; */
+          }
+.card15 {
+              grid-area:card15;
+              /* display:inline-grid; */
+            }
+.card16 {
+                grid-area:card16;
+                /* display:inline-grid; */
+              }
+.card17 {
+                  grid-area:card17;
+                  /* display:inline-grid; */
+                }
+
+@media (max-width: 500px){
+
+
+  body{
+    background-color: #A5D7A2;
+    font-family:cursive;
+  }
+
+  section{
+    width:480px;
+    padding:0px;
+    border:solid 1px;
+    border-color: black;
+
+  }
+
+  img{
+    width: 400px;
+    height:400px;
+    padding:0px;
+    border: solid 1px;
+    border-color: #000000;
+  }
+
+  h1{ font-family:cursive; color: #240B74;
+            font-size: 40px;}
+  h2 {font-family:cursive; color: #240B74;
+
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .2fr .2fr .2fr
+    .2fr .2fr .2fr .2fr
+    .2fr .2fr .2fr 1fr
+    .2fr .2fr .2fr 1fr
+    1fr;
+    grid-template-areas:
+    "header"
+    "card1"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8"
+    "card9"
+    "card10"
+    "card11"
+    "card12"
+    "card13"
+    "card14"
+    "card15"
+    "card16"
+    "card17";
+
+
+  border:solid 1px black;
+  }
+
+
+
+
+  .header {
+    grid-area:header;
+    border: 1px black;}
+
+
+  .nav {
+    grid-area:nav;
+  }
+
+  .card1 {
+      grid-area:card1;
+      border-bottom: 0px;
+      /* display:inline-grid; */
+    }
+
+  .card3 {
+      grid-area:card3;
+      border-top: 0px;
+      /* display:inline-grid; */
+    }
+  .card4 {
+      grid-area:card4;
+      /* display:inline-grid; */
+    }
+  .card5 {
+      grid-area:card5;
+      /* display:inline-grid; */
+    }
+
+  .card6 {
+      grid-area:card6;
+      /* display:inline-grid; */
+    }
+
+  .card7 {
+        grid-area:card7;
+        /* display:inline-grid; */
+      }
+  .card8 {
+          grid-area:card8;
+          /* display:inline-grid; */
+        }
+  .card9 {
+            grid-area:card9;
+            /* display:inline-grid; */
+          }
+  .card10 {
+              grid-area:card10;
+              /* display:inline-grid; */
+            }
+  .card11 {
+                grid-area:card11;
+                /* display:inline-grid; */
+              }
+  .card12 {
+                  grid-area:card12;
+                  /* display:inline-grid; */
+                }
+  .card13{
+          grid-area:card13;
+            /* display:inline-grid; */
+          }
+  .card14{
+              grid-area:card14;
+              /* display:inline-grid; */
+            }
+  .card15 {
+                grid-area:card15;
+                /* display:inline-grid; */
+              }
+  .card16 {
+                  grid-area:card16;
+                  /* display:inline-grid; */
+                }
+  .card17 {
+                    grid-area:card17;
+                    /* display:inline-grid; */
+                  }
+  }

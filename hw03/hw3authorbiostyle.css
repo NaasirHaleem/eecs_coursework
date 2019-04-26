@@ -1,0 +1,170 @@
+body{
+  background-color: #A5D7A2;
+  font-family:cursive;
+}
+
+section{
+  width:500px;
+  padding:0px;
+  border:solid 1px;
+  border-color: black;
+
+}
+
+img{
+  width: 400px;
+  height:400px;
+  padding:0px;
+  border: solid 1px;
+  border-color: #000000;
+}
+
+h1{ font-family:cursive; color: #240B74;
+          font-size: 40px;}
+h2 {font-family:cursive; color: #240B74;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .1fr .1fr .1fr 1fr;
+  grid-template-areas:
+  "header header"
+  "nav nav"
+  "card1 card3"
+  "card2 card4";
+
+
+
+border:solid 0px black;
+}
+
+
+
+
+.header {
+  grid-area:header;}
+
+
+.nav {
+  grid-area:nav;
+  width: 200px;
+  height:200px;
+  padding:30px;
+  border: solid 1px;
+  border-color: #000000;
+  display: inline-block;
+}
+
+.card1 {
+  grid-area:card1;
+  font-family:cursive; color: #240B74;
+            font-size: 40px;
+  border: solid 0px;
+
+}
+
+.card2 {
+    grid-area:card2;
+  }
+
+.card3 {
+    grid-area:card3;
+    font-family:cursive; color: #240B74;
+              font-size: 40px;
+    border: solid 0px;
+  }
+.card4 {
+    grid-area:card4;
+    height:300px;
+    /* display:inline-grid; */
+  }
+
+@media (max-width: 500px){
+
+  body{
+    background-color: #A5D7A2;
+    font-family:cursive;
+  }
+
+  section{
+    width:480px;
+    padding:0px;
+    border:solid 1px;
+    border-color: black;
+
+  }
+
+  img{
+    width: 400px;
+    height:400px;
+    padding:0px;
+    border: solid 1px;
+    border-color: #000000;
+  }
+
+  h1{ font-family:cursive; color: #240B74;
+            font-size: 40px;}
+  h2 {font-family:cursive; color: #240B74;
+
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr .1fr .1fr 1fr .1fr 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "card1"
+    "card2"
+    "card3"
+    "card4";
+
+
+
+  border:solid 0px black;
+  }
+
+
+
+
+  .header {
+    grid-area:header;}
+
+
+  .nav {
+    grid-area:nav;
+    width: 200px;
+    height:200px;
+    padding:30px;
+    border: solid 1px;
+    border-color: #000000;
+    display: inline-block;
+  }
+
+  .card1 {
+    grid-area:card1;
+    font-family:cursive; color: #240B74;
+              font-size: 40px;
+    border: solid 0px;
+
+  }
+
+  .card2 {
+      grid-area:card2;
+    }
+
+  .card3 {
+      grid-area:card3;
+      font-family:cursive; color: #240B74;
+                font-size: 40px;
+      border: solid 0px;
+    }
+  .card4 {
+      grid-area:card4;
+      height:300px;
+      /* display:inline-grid; */
+    }
+}
