@@ -17,15 +17,3 @@ window.onclick = function(event) {
     }
   }
 }
-
-// Votes Database
-// fetch('https://wildside-nu.herokuapp.com/votes', {
-//     method: 'POST',
-//     headers: {
-//         'Accept': 'application/json',
-//         'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify({
-//         "student_id": studentID,
-//         "vote": vote,
-//     })

@@ -1,0 +1,6 @@
+votes: Student_Id
+  vote
+
+{"votes":[{"student_id":"name","vote":"a"}]}
+
+{"votes":[{"id":1, "student_id":"name","vote":"a"}]}
