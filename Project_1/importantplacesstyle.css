@@ -24,6 +24,9 @@ body {
 
 .header {
   grid-area:header;
+  border-top: solid 20px;
+  border-left: solid 1px;
+  border-right: solid 1px;
 }
 
 .header h1{
@@ -34,14 +37,11 @@ body {
 }
 
 .header p {
-  border: solid 1px;
   padding: 10px;
-  font-size:20px;
 }
 
 section {
   border-top: solid 20px;
-  border-bottom: solid 20px;
 }
 
 .card1{
@@ -61,6 +61,8 @@ section {
 
 .card2{
   grid-area:card2;
+  border-left: solid 1px;
+  border-right: solid 1px;
 }
 
 .card2 h1{
@@ -77,6 +79,8 @@ section {
 
 .card3{
   grid-area:card3;
+  border-left: solid 1px;
+  border-right: solid 1px;
 }
 
 .card3 h1{
@@ -94,6 +98,8 @@ section {
 .card4 {
   grid-area:card4;
   font-size:24px;
+  border-left: solid 1px;
+  border-right: solid 1px;
 }
 
 .card4 h1{
@@ -103,11 +109,13 @@ section {
 
   }
 
-}
 
 .card5{
   grid-area:card5;
   font-size:24px;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-top: solid 20px;
 }
 
 .card5 h1{
@@ -121,6 +129,8 @@ section {
   grid-area:card6;
   padding:40px;
   font-size:24px;
+  border-left: solid 1px;
+  border-right: solid 1px;
 
 }
 
@@ -134,6 +144,8 @@ section {
 .card7{
   grid-area:card7;
   font-size:24px;
+  border-left: solid 1px;
+  border-right: solid 1px;
 }
 
 .card7 h1{
@@ -146,6 +158,8 @@ section {
 .card8{
   grid-area:card8;
   font-size:24px;
+  border-left: solid 1px;
+  border-right: solid 1px;
 }
 
 .card8 h1{
@@ -158,6 +172,8 @@ section {
 .card9{
   grid-area:card9;
   font-size:24px;
+  border-left: solid 1px;
+  border-right: solid 1px;
 }
 
 .card9 h1{
@@ -198,6 +214,9 @@ legend{
   font-size:30px;
 }
 
+p {
+  font-size: 24px;
+}
 /* Dropdown Button */
 .dropbtn {
   background-color: #4E2A84;
@@ -239,3 +258,267 @@ legend{
 }
 
 .show {display:block;}
+
+@media (max-width: 500px){
+  body {
+    background-color:#E4E0EE;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "card1"
+    "header"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8"
+    "card9";
+    height: 400px;
+    padding:50px;}
+
+  .header {
+    grid-area:header;
+    border-top: solid 20px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    width:500px;
+  }
+
+  .header h1{
+    margin-left:100px;
+    font-size: 48px;
+    color: #4E2A84;
+
+  }
+
+  .header p {
+    padding: 10px;
+  }
+
+  section {
+    border-top: solid 20px;
+    width:500px;
+  }
+
+  .card1{
+    grid-area:card1;
+    border-top: solid 0px;
+    border-bottom: solid 0px;
+  }
+
+  .card1 h1{
+    margin-left:100px;
+    font-size:40px;
+  }
+
+  .card1 p{
+    font-size:18px;
+  }
+
+  .card2{
+    grid-area:card2;
+    border-left: solid 1px;
+    border-right: solid 1px;
+  }
+
+  .card2 h1{
+    margin-left:100px;
+    font-size: 48px;
+    color: #4E2A84;
+
+  }
+
+  .card2 p {
+    margin-left:30px;
+    font-size:24px;
+  }
+
+  .card3{
+    grid-area:card3;
+    border-left: solid 1px;
+    border-right: solid 1px;
+  }
+
+  .card3 h1{
+    margin-left:100px;
+    font-size: 48px;
+    color: #4E2A84;
+
+  }
+
+  .card3 p{
+    margin-left:40px;
+    font-size:24px;
+  }
+
+  .card4 {
+    grid-area:card4;
+    font-size:24px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+  }
+
+  .card4 h1{
+      margin-left:100px;
+      font-size: 48px;
+      color: #4E2A84;
+
+    }
+
+
+
+  .card5{
+    grid-area:card5;
+    font-size:24px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+  }
+
+  .card5 h1{
+    margin-left:100px;
+    font-size: 48px;
+    color: #4E2A84;
+
+  }
+
+  .card6{
+    grid-area:card6;
+    padding:40px;
+    font-size:24px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+
+  }
+
+  .card6 h1{
+    margin-left:100px;
+    font-size: 48px;
+    color: #4E2A84;
+
+  }
+
+  .card7{
+    grid-area:card7;
+    font-size:24px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+  }
+
+  .card7 h1{
+    margin-left:100px;
+    font-size: 48px;
+    color: #4E2A84;
+
+  }
+
+  .card8{
+    grid-area:card8;
+    font-size:24px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+  }
+
+  .card8 h1{
+    margin-left:100px;
+    font-size: 48px;
+    color: #4E2A84;
+
+  }
+
+  .card9{
+    grid-area:card9;
+    font-size:24px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+  }
+
+  .card9 h1{
+    margin-left:100px;
+    font-size: 48px;
+    color: #4E2A84;
+
+  }
+
+
+
+
+
+
+  img{
+    width: 300px;
+    height:300px;
+    border: solid 1px;
+    margin-left:100px;
+    border-color: #000000;
+  }
+
+  button {
+    font-size: 40px;
+    font-family:monospace;
+  }
+
+  div{
+    padding:10px;
+  }
+
+  label {
+    font-size: 30px;
+  }
+
+  legend{
+    font-size:30px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+  /* Dropdown Button */
+  .dropbtn {
+    background-color: #4E2A84;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left:50px;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {display:block;}
+
+
+}

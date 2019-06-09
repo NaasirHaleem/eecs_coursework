@@ -32,6 +32,7 @@ const addVote = (ev) => {
     .then(data => {
         // 3. print the results to the screen
         console.log(data);
+        getVotes();
     });
     ev.preventDefault();
 };
@@ -62,6 +63,56 @@ window.onclick = function(event) {
   }
 }
 
+const getVotes = () => {
+  const vote_dictionary = {}
+  fetch('https://wildside-nu.herokuapp.com/votes')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        for (item of data) {
+          if (vote_dictionary[item.vote]){
+            vote_dictionary[item.vote] += 1
+          }
+          else {
+            vote_dictionary[item.vote] = 1
+          }
+        }
+        console.log(vote_dictionary);
+        loadChart(vote_dictionary);
+    });
+};
+
+
+// Votes Bar Chart
+
+const loadChart = (counts) => {
+
+  var chart = new CanvasJS.Chart("chartContainer", {
+  	animationEnabled: true,
+  	theme: "light2", // "light1", "light2", "dark1", "dark2"
+  	title:{
+  		text: "Votes"
+  	},
+  	axisY: {
+  		title: "Votes"
+  	},
+  	data: [{
+  		type: "column",
+  		showInLegend: true,
+  		legendMarkerColor: "grey",
+  		legendText: "Votes",
+  		dataPoints: [
+  			{ y: counts['A'], label: "A" },
+  			{ y: counts['B'],  label: "B" },
+  			{ y: counts['C'],  label: "C" },
+  		]
+  	}]
+  });
+  chart.render();
+
+};
+
+
 // Votes Database
 // fetch('https://wildside-nu.herokuapp.com/votes', {
 //     method: 'POST',
@@ -80,3 +131,4 @@ window.onclick = function(event) {
     //     console.log(data);
     // });
     // };
+getVotes();
